@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PlumbingApp</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= link_to 'home', root_path %>
+<%= link_to 'products', products_path %>
+<%= link_to 'services', services_path %>
+<%= link_to 'serach', search_path %>
+
+
+
+
+<!-- <nav>
+  <ul>
+    <li><a href="/about_us">About US</a></li>
+    <li><a href="/faqs">FAQS</a></li>
+    <li><a href="/terms">Terms and Conditions</a></li>
+  </ul>
+</nav> -->
+
+
+
+
+
+
+
+<%= yield %>
+
+</body>
+</html>
